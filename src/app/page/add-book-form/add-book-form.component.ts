@@ -21,5 +21,15 @@ public addBook(){
 
 }
 
+public cancelBook(){
+  this.book.authorId="";
+  this.book.authorName="";
+  this.book.bookId="";
+  this.book.category="";
+  this.book.title="";
+  this.book.price=0;
+  this.book.isbn="";
+  this.book.title="";
+}
 
 }
