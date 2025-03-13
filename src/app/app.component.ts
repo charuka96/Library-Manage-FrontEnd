@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, NgModule } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { RootDashBordComponent } from "./page/root-dash-bord/root-dash-bord.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RootDashBordComponent,RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
