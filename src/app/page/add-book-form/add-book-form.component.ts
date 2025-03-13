@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel } from '@angular/forms';
 import { Book } from '../../model/Book';
 
 @Component({
@@ -10,9 +11,15 @@ import { Book } from '../../model/Book';
   styleUrl: './add-book-form.component.css'
 })
 export class AddBookFormComponent {
-  public book : Book = new Book(0, "","", "","");
+  public book : Book = new Book(0, "","", "","","",new Date());
 
-  
+constructor(private Http:HttpClient){}
+
+public addBook(){
+  console.log(this.book);
+  this.Http.post("http://localhost:8080/add-book",this.book)
+
+}
 
 
 }

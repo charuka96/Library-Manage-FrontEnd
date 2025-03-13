@@ -1,206 +1,242 @@
-
 <div class="flex h-screen">
- <div class="w-64 h-screen text-white bg-indigo-800">
-  <div class="flex items-center p-4 space-x-2">
-    <i class="text-2xl fas fa-book-open"></i>
-    <h1 class="text-xl font-bold">LibraryPlus</h1>
-  </div>
-
-  <nav class="mt-8">
-    <a href="#" class="flex items-center w-full px-4 py-3 space-x-3 bg-indigo-900">
-      <i class="fas fa-chart-pie"></i>
-      <span>Dashboard</span>
-    </a>
-
-    <a   routerLinkActive="router-link-active"   routerLinkActive="router-link-active"  class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700">
-      <i class="fas fa-book"></i>
-      <span>Books Catalog</span>
-    </a>
-
-    <a href="" routerLink="rootDash"   class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700">
-      <i class="fas fa-users"></i>
-      <span>Members</span>
-    </a>
-
-    <a href="#" class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700">
-      <i class="fas fa-exchange-alt"></i>
-      <span>Circulation</span>
-    </a>
-
-    <a href="#" class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700">
-      <i class="fas fa-calendar-alt"></i>
-      <span>Reservations</span>
-    </a>
-
-    <a href="#" class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700">
-      <i class="fas fa-cog"></i>
-      <span>Settings</span>
-    </a>
-  </nav>
-
-  <div class="absolute bottom-0 w-64 p-4 bg-indigo-900">
-    <div class="flex items-center space-x-3">
-      <div class="flex items-center justify-center w-10 h-10 font-bold text-indigo-800 bg-indigo-300 rounded-full">
-        LB
-      </div>
-      <div>
-        <p class="text-sm font-medium">Library Admin</p>
-        <p class="text-xs text-indigo-300">adminlibraryplus.com</p>
-      </div>
+  <div class="w-64 h-screen text-white bg-indigo-800">
+    <div class="flex items-center p-4 space-x-2">
+      <i class="text-2xl fas fa-book-open"></i>
+      <h1 class="text-xl font-bold">LibraryPlus</h1>
     </div>
-  </div>
-</div>
 
-<!-- form section -->
+    <nav class="mt-8">
+      <a
+        href="#"
+        class="flex items-center w-full px-4 py-3 space-x-3 bg-indigo-900"
+      >
+        <i class="fas fa-chart-pie"></i>
+        <span>Dashboard</span>
+      </a>
 
-<div class="flex overflow-y-auto  m-auto  bg ">
-<form>
-  <div class="space-y-12 ">
-    <div class="border-b border-gray-900/10 pb-12">
-      <h2 class="text-base/7 font-semibold text-gray-900">
-        Book Information
-      </h2>
-      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-        <div class="sm:col-span-3">
-          <label
-            for="first-name"
-            class="block text-sm/6 font-medium text-gray-900"
-            >BookID</label
-          >
-          <div class="mt-2">
-            <input 
-              type="text"
-              name="first-name"
-              id="first-name"
-              autocomplete="given-name"
-              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-            />
-          </div>
+      <a
+        routerLinkActive="router-link-active"
+        routerLinkActive="router-link-active"
+        class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700"
+      >
+        <i class="fas fa-book"></i>
+        <span>Books Catalog</span>
+      </a>
+
+      <a
+        href=""
+        routerLink="rootDash"
+        class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700"
+      >
+        <i class="fas fa-users"></i>
+        <span>Members</span>
+      </a>
+
+      <a
+        href="#"
+        class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700"
+      >
+        <i class="fas fa-exchange-alt"></i>
+        <span>Circulation</span>
+      </a>
+
+      <a
+        href="#"
+        class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700"
+      >
+        <i class="fas fa-calendar-alt"></i>
+        <span>Reservations</span>
+      </a>
+
+      <a
+        href="#"
+        class="flex items-center w-full px-4 py-3 space-x-3 hover:bg-indigo-700"
+      >
+        <i class="fas fa-cog"></i>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <div class="absolute bottom-0 w-64 p-4 bg-indigo-900">
+      <div class="flex items-center space-x-3">
+        <div
+          class="flex items-center justify-center w-10 h-10 font-bold text-indigo-800 bg-indigo-300 rounded-full"
+        >
+          LB
         </div>
-
-        <div class="sm:col-span-3">
-          <label
-            for="last-name"
-            class="block text-sm/6 font-medium text-gray-900"
-            >Price</label
-          >
-          <div class="mt-2">
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              autocomplete="family-name"
-              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-            />
-          </div>
+        <div>
+          <p class="text-sm font-medium">Library Admin</p>
+          <p class="text-xs text-indigo-300">adminlibraryplus.com</p>
         </div>
-
-        <div class="sm:col-span-3">
-          <label for="text" class="block text-sm/6 font-medium text-gray-900"
-            >Title</label
-          >
-          <div class="mt-2">
-            <input
-              id="email"
-              name="Title"
-              type="text"
-              autocomplete="email"
-              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-            />
-          </div>
-        </div>
-
-        <div class="sm:col-span-3">
-          <label
-            for="country"
-            class="block text-sm/6 font-medium text-gray-900"
-            >category</label
-          >
-          <div class="mt-2 grid grid-cols-1">
-            <select
-              id="country"
-              name="country"
-              autocomplete="country-name"
-              class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-            >
-              <option>United States</option>
-              <option>Canada</option>
-              <option>Mexico</option>
-            </select>
-            <svg
-              class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              aria-hidden="true"
-              data-slot="icon"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-
-        <div class="col-span-3">
-          <label
-            for="street-address"
-            class="block text-sm/6 font-medium text-gray-900"
-            >ISBN</label
-          >
-          <div class="mt-2">
-            <input
-              type="text"
-              name="street-address"
-              id="street-address"
-              autocomplete="street-address"
-              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-            />
-          </div>
-        </div>
-        <div class="col-span-3">
-          <label
-            for="street-address"
-            class="block text-sm/6 font-medium text-gray-900"
-            >ISBN</label
-          >
-          <div class="mt-2">
-            <input
-              type="text"
-              name="street-address"
-              id="street-address"
-              autocomplete="street-address"
-              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-            />
-          </div>
-        </div>
-
-
       </div>
     </div>
   </div>
 
-  <div class="mt-4 flex items-center justify-end gap-x-6">
-    <button type="button" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-      Cancel
-    </button>
-    <button
-      type="submit"
-      class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-    >
-      Save
-    </button>
+  <!-- form section -->
+
+  <div class="flex overflow-y-auto m-auto bg">
+    <form>
+      <div class="space-y-12">
+        <div class="border-b border-gray-900/10 pb-12">
+          <h2 class="text-base/7 font-semibold text-gray-900">
+            Book Information
+          </h2>
+          <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-3">
+              <label
+                for="last-name"
+                class="block text-sm/6 font-medium text-gray-900"
+                >Book Title</label
+              >
+              <div class="mt-2">
+                <input
+                  [(ngModel)]="book.title"
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  autocomplete="family-name"
+                  class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-3">
+              <label
+                for="text"
+                class="block text-sm/6 font-medium text-gray-900"
+                >Price</label
+              >
+              <div class="mt-2">
+                <input
+                  [(ngModel)]="book.price"
+                  id="email"
+                  name="Title"
+                  type="text"
+                  autocomplete="email"
+                  class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-3">
+              <label
+                for="country"
+                class="block text-sm/6 font-medium text-gray-900"
+                >Book category</label
+              >
+              <div class="mt-2 grid grid-cols-1">
+                <select
+                  [(ngModel)]="book.category"
+                  id="country"
+                  name="country"
+                  autocomplete="country-name"
+                  class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                >
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Mexico</option>
+                </select>
+                <svg
+                  class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="col-span-3">
+              <label
+                for="street-address"
+                class="block text-sm/6 font-medium text-gray-900"
+                >ISBN</label
+              >
+              <div class="mt-2">
+                <input
+                  [(ngModel)]="book.isbn"
+                  type="text"
+                  name="street-address"
+                  id="street-address"
+                  autocomplete="street-address"
+                  class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+            <div class="col-span-3">
+              <label
+                for="street-address"
+                class="block text-sm/6 font-medium text-gray-900"
+                >Author Name
+              </label>
+              <div class="mt-2">
+                <input
+                  [(ngModel)]="book.authorName"
+                  type="text"
+                  name="street-address"
+                  id="street-address"
+                  autocomplete="street-address"
+                  class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+
+            <div class="col-span-3">
+              <label
+                for="street-address"
+                class="block text-sm/6 font-medium text-gray-900"
+                >Author Id</label
+              >
+              <div class="mt-2">
+                <input
+                  [(ngModel)]="book.authorId"
+                  type="text"
+                  name="street-address"
+                  id="street-address"
+                  autocomplete="street-address"
+                  class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- datepiker -->
+
+          <div class="pt-4 pb-2">
+            <label for="date" class="block text-sm font-medium text-gray-700"
+              >Publication Date</label
+            >
+            <input
+              [(ngModel)]="book.updateDate"
+              id="date"
+              type="date"
+              class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center justify-end gap-x-6">
+        <button
+          type="button"
+          class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        >
+          Cancel
+        </button>
+        <button
+          (click)="addBook()"
+          type="submit"
+          class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        >
+          Save
+        </button>
+      </div>
+    </form>
   </div>
-</form>
 </div>
-
-
-
-
-
-
-
-
-
-
