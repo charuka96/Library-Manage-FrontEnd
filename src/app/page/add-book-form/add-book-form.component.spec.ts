@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddBookFormComponent } from './add-book-form.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { ViewBookComponent } from '../view-book/view-book.component';
 
 describe('AddBookFormComponent', () => {
   let component: AddBookFormComponent;
@@ -8,7 +10,7 @@ describe('AddBookFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AddBookFormComponent]
+      imports: [AddBookFormComponent,RouterLink ,ViewBookComponent,RouterOutlet]
     })
     .compileComponents();
 
